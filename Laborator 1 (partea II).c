@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_PROFILES 100
 
 typedef struct
 {
