@@ -51,7 +51,7 @@ int search_profile(Profile profiles[], int num_profiles, char name[])
             return i;
         }
     }
-    return -1;
+    return 0;
 }
 
 void free_memory(Profile *profiles)
@@ -211,7 +211,7 @@ void evaluate_the_option(int choice, Profile *profiles, int *num_profiles)
                 printf("\nEnter the profile name: ");
                 scanf("%s", search_name);
                 int position=search_profile(profiles, *num_profiles, search_name);
-                if(position!=-1)
+                if(position!=0)
                 {
                     printf("\nProfile was found at position %d.\n",position+1);
                 }
