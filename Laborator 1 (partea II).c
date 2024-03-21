@@ -250,7 +250,7 @@ int main()
         return 1;
     }
 
-    do
+    while (choice != 8);
     {
         display_the_menu();
         scanf("%d", &choice);
