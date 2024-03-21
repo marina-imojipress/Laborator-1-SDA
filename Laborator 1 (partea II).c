@@ -256,6 +256,5 @@ int main()
         scanf("%d", &choice);
         evaluate_the_option(choice, profiles, &num_profiles);
     }
-    while (choice != 8);
     return 0;
 }
