@@ -61,6 +61,7 @@ int main()
     Profile profiles[50];
     int num_profiles=0;
     int choice;
+    int position;
     char search_name[50];
 
     do {
@@ -89,7 +90,7 @@ int main()
             case 3:
                 printf("\nEnter the name to search for: ");
                 scanf("%s", search_name);
-                int position=search_profile_by_name(profiles, num_profiles, search_name);
+                position=search_profile_by_name(profiles, num_profiles, search_name);
                 if(position!=0)
                 {
                     printf("\nProfile found at position %d\n",position+1);
@@ -102,8 +103,6 @@ int main()
             case 4:
                 printf("\nExit\n");
                 break;
-            default:
-                printf("\nInvalid option\n");
         }
     }
     while(choice!=4);
