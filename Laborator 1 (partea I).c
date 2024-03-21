@@ -64,7 +64,8 @@ int main()
     int position;
     char search_name[50];
 
-    do {
+       while(choice!=4);
+     {
         printf("\n\t\t**| MENU |**\n");
         printf("1. Enter profile data\n");
         printf("2. Display profile data\n");
@@ -105,7 +106,7 @@ int main()
                 break;
         }
     }
-    while(choice!=4);
+ 
 
     return 0;
 }
